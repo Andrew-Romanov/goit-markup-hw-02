@@ -1,0 +1,122 @@
+/*
+color: #212121; — основной цвет текста
+color: #757575; — вторичный цвет текста
+color: #2196F3; — акцент
+color: #FFFFFF; — белый
+color: rgba(255, 255, 255, 0.6); — цвет контактов в подвале
+background: #F5F4FA; — светло-серый для фона и кнопок
+background: #2F303A; — тёмно-серый для фона
+*/
+
+/* Общая стилизация */
+body {
+	color: #212121;
+	background-color: #FFFFFF;
+}
+a {
+	text-decoration: none;
+}
+/* .section {
+   color: #212121;
+}
+.section-title {
+  color: #212121;
+} */
+
+/* Логотип на светлом фоне */
+.logo-dark .web {
+	color: #2196F3;
+}
+.logo-dark:hover .web {
+	color: #000000;
+}
+.logo-dark .studio {
+	color: #000000;
+}
+.logo-dark:hover .studio {
+	color: #2196F3;
+}
+
+
+/* Логотип на тёмном фоне */
+.logo-light .web{
+	color: #2196F3;
+}
+.logo-light:hover .web {
+	color: #FFFFFF;
+}
+.logo-light .studio {
+	color: #FFFFFF;
+}
+.logo-light:hover .studio {
+	color: #2196F3;
+}
+
+/* Список без буллетов */
+.list {
+  padding: 0px;
+	list-style: none;
+}
+
+/* Заголовок страницы с меню навигации */
+.site-nav a {
+	color: #212121;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+	color: #2196F3;
+}
+.contacts-top a {
+  color: #757575;
+}
+.contacts-top a:hover,
+.contacts-top a:focus {
+	color: #2196F3;
+}
+
+/* Заставка */
+.hero {
+  background-color: #2F303A;
+}
+.hero-title {
+	color: #FFFFFF;
+}
+.hero-button {
+	color: #FFFFFF;
+}
+
+/* Особенности и преимущества */
+.features p {
+  color: #757575;
+}
+
+/* Наша команда */
+.team {
+  background: #F5F4FA;
+}
+.team p {
+  color: #757575;
+}
+
+/* Подвал */
+.footer {
+  background-color: #2F303A;
+}
+.footer > address{
+  color: #FFFFFF;
+}
+.contacts-bottom a {
+	color: rgba(255, 255, 255, 0.6);
+}
+.contacts-bottom a:hover,
+.contacts-bottom a:focus {
+	color: #2196F399;
+}
+
+/* Набор контента */
+.content h2 {
+	color: #212121;
+}
+.content p {
+  color: #757575;
+}

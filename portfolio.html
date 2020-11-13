@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
   <link rel="icon" href="./images/webstudio-favicon-192x192.png" sizes="192x192">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -19,17 +20,18 @@
         <img src="./images/webstudio-logo.svg" alt="Логотип WebStudio" width="145">
       </a> -->
       <!-- Логотип в виде текста -->
-      <a href="./index.html">
-        WebStudio
+      <a class="logo-dark" href="./index.html">
+        <span class="web">Web</span><span class="studio">Studio</span>
       </a>
 
-      <ul>
+      <ul class="site-nav list">
         <li><a href="./index.html">Студия</a></li>
         <li><a href="./portfolio.html">Портфолио</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
     </nav>
-    <ul>
+
+    <ul class="contacts-top list">
       <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
       <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
@@ -41,9 +43,9 @@
 
     <!-- Портфолио -->
     <section>
-        <h1>Наши работы</h1>
+      <h1>Наши работы</h1>
       <!-- Селектор контента -->
-      <ul>
+      <ul class="list">
         <li><button type="button">Всё</button></li>
         <li><button type="button">Веб-сайты</button></li>
         <li><button type="button">Приложения</button></li>
@@ -52,7 +54,7 @@
       </ul>
 
       <!-- Набор контента -->
-      <ul>
+      <ul class="content list">
         <li>
           <a href="">
             <img src="./images/technocrak.jpg" alt="Технокряк. Веб-сайт" width="370">
@@ -129,18 +131,18 @@
 
   </main>
 
-  <!-- Подвал страницы -->
-  <footer>
+  <!-- Подвал -->
+  <footer class="footer">
     <!-- Логотип в виде SVG
     <a href="/">
       <img src="./images/webstudio-logo-2.svg" alt="Логотип WebStudio" width="145">
     </a> -->
     <!-- Логотип в виде текста -->
-    <a href="/">
-      WebStudio
+    <a class="logo-light" href="./index.html">
+      <span class="web">Web</span><span class="studio">Studio</span>
     </a>
     <address>г. Киев, пр-т Леси Украинки, 26</address>
-    <ul>
+    <ul class="contacts-bottom list">
       <li><a href="mailto:info@example.com">info@example.com</a></li>
       <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
     </ul>
