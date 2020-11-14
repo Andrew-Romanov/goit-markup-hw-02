@@ -1,55 +1,62 @@
 /*
 color: #212121; — основной цвет текста
 color: #757575; — вторичный цвет текста
+color: rgba(255, 255, 255, 0.6); — цвет контактов в подвале
 color: #2196F3; — акцент
 color: #FFFFFF; — белый
-color: rgba(255, 255, 255, 0.6); — цвет контактов в подвале
 background: #F5F4FA; — светло-серый для фона и кнопок
 background: #2F303A; — тёмно-серый для фона
 */
 
+/* Объявление цветов через CSS переменные */
+:root {
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+	--bottom-contacts-text-color: rgba(255, 255, 255, 0.6);
+	--accent-color: #2196F3;
+	--accent-color-trasparent: #2196F399;
+	--main-light-color: #FFFFFF;
+	--main-light-gray-color: #F5F4FA;
+	--main-dark-gray-color: #2F303A;
+	--main-black-color: #000000;
+}
+
 /* Общая стилизация */
 body {
-	color: #212121;
-	background-color: #FFFFFF;
+	color: var(--primary-text-color);
+	background-color: var(--main-light-color);
 }
 a {
 	text-decoration: none;
 }
-/* .section {
-   color: #212121;
-}
-.section-title {
-  color: #212121;
-} */
 
 /* Логотип на светлом фоне */
 .logo-dark .web {
-	color: #2196F3;
+	color: var(--accent-color);
 }
 .logo-dark:hover .web {
-	color: #000000;
+	color: var(--main-black-color);
 }
 .logo-dark .studio {
-	color: #000000;
+	color: var(--main-black-color);
 }
 .logo-dark:hover .studio {
-	color: #2196F3;
+	color: var(--accent-color);
 }
 
 
 /* Логотип на тёмном фоне */
 .logo-light .web{
-	color: #2196F3;
+	color: var(--accent-color);
 }
 .logo-light:hover .web {
-	color: #FFFFFF;
+	color: var(--main-light-color);
 }
 .logo-light .studio {
-	color: #FFFFFF;
+	color: var(--main-light-color);
 }
 .logo-light:hover .studio {
-	color: #2196F3;
+	color: var(--accent-color);
 }
 
 /* Список без буллетов */
@@ -59,64 +66,77 @@ a {
 }
 
 /* Заголовок страницы с меню навигации */
-.site-nav a {
-	color: #212121;
+.site-nav .link {
+	color: var(--primary-text-color);
 }
-.site-nav a:hover,
-.site-nav a:focus {
-	color: #2196F3;
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+.site-nav .link.current:hover,
+.site-nav .link.current:focus {
+	color: var(--primary-text-color);
 }
 .contacts-top a {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .contacts-top a:hover,
 .contacts-top a:focus {
-	color: #2196F3;
+	color: var(--accent-color);
 }
 
 /* Заставка */
 .hero {
-  background-color: #2F303A;
+  background-color: var(--main-dark-gray-color);
 }
 .hero-title {
-	color: #FFFFFF;
+	color: var(--main-light-color);
 }
 .hero-button {
-	color: #FFFFFF;
+	color: var(--main-light-color);
+	background-color: var(--accent-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+	color: var(--main-black-color);
+	background-color: var(--main-light-gray-color);
 }
 
 /* Особенности и преимущества */
 .features p {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* Наша команда */
 .team {
-  background: #F5F4FA;
+  background: var(--main-light-gray-color);
 }
 .team p {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* Подвал */
 .footer {
-  background-color: #2F303A;
+  background-color: var(--main-dark-gray-color);
 }
 .footer > address{
-  color: #FFFFFF;
+  color: var(--main-light-color);
 }
 .contacts-bottom a {
-	color: rgba(255, 255, 255, 0.6);
+	color: var(--bottom-contacts-text-color);
 }
 .contacts-bottom a:hover,
 .contacts-bottom a:focus {
-	color: #2196F399;
+	color: var(--accent-color-trasparent);
 }
 
 /* Набор контента */
 .content h2 {
-	color: #212121;
+	color: var(--primary-text-color);
 }
 .content p {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
