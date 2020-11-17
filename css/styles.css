@@ -10,96 +10,93 @@ background: #2F303A; — тёмно-серый для фона
 
 /* Объявление цветов через CSS переменные */
 :root {
-	--primary-text-color: #212121;
-	--secondary-text-color: #757575;
-	--bottom-contacts-text-color: rgba(255, 255, 255, 0.6);
-	--accent-color: #2196F3;
-	--accent-color-trasparent: #2196F399;
-	--main-light-color: #FFFFFF;
-	--main-light-gray-color: #F5F4FA;
-	--main-dark-gray-color: #2F303A;
-	--main-black-color: #000000;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --bottom-contacts-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196F3;
+  --accent-color-trasparent: #2196F399;
+  --main-light-color: #FFFFFF;
+  --main-light-gray-color: #F5F4FA;
+  --main-dark-gray-color: #2F303A;
+  --main-black-color: #000000;
 }
 
 /* Общая стилизация */
 body {
-	color: var(--primary-text-color);
-	background-color: var(--main-light-color);
-  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--main-light-color);
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
+}
+
+/* Логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 /* Логотип на светлом фоне */
-.logo-dark {
-	font-family: Raleway, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
+.logo .web-on-light {
+  color: var(--accent-color);
 }
-.logo-dark .web {
-	color: var(--accent-color);
+.logo:hover .web-on-light,
+.logo:focus .web-on-light {
+  color: var(--main-black-color);
 }
-.logo-dark:hover .web,
-.logo-dark:focus .web {
-	color: var(--main-black-color);
+.logo .studio-on-light {
+  color: var(--main-black-color);
 }
-.logo-dark .studio {
-	color: var(--main-black-color);
-}
-.logo-dark:hover .studio,
-.logo-dark:focus .studio {
-	color: var(--accent-color);
+.logo:hover .studio-on-light,
+.logo:focus .studio-on-light {
+  color: var(--accent-color);
 }
 
 
 /* Логотип на тёмном фоне */
-.logo-light {
-	font-family: Raleway, sans-serif;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 1.19;
+.logo .web-on-dark {
+  color: var(--accent-color);
 }
-.logo-light .web{
-	color: var(--accent-color);
+.logo:hover .web-on-dark,
+.logo:focus .web-on-dark {
+  color: var(--main-light-color);
 }
-.logo-light:hover .web,
-.logo-light:focus .web {
-	color: var(--main-light-color);
+.logo .studio-on-dark {
+  color: var(--main-light-color);
 }
-.logo-light .studio {
-	color: var(--main-light-color);
-}
-.logo-light:hover .studio,
-.logo-light:focus .studio {
-	color: var(--accent-color);
+.logo:hover .studio-on-dark,
+.logo:focus .studio-on-dark {
+  color: var(--accent-color);
 }
 
 /* Список без буллетов */
 .list {
   padding: 0px;
-	list-style: none;
+  list-style: none;
 }
 
 /* Заголовок страницы с меню навигации */
 .site-nav .link {
-	color: var(--primary-text-color);
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-	color: var(--accent-color);
+.site-nav .link:focus,
+.site-nav .link.current,
+.contacts-top a:hover,
+.contacts-top a:focus {
+  color: var(--accent-color);
 }
-.site-nav .link.current {
-	color: var(--accent-color);
-}
+
 .site-nav .link.current:hover,
 .site-nav .link.current:focus {
 	color: var(--primary-text-color);
@@ -109,10 +106,6 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.contacts-top a:hover,
-.contacts-top a:focus {
-	color: var(--accent-color);
 }
 
 /* Заставка */
@@ -187,7 +180,7 @@ a {
   font-style: normal;
 }
 .contacts-bottom a {
-	color: var(--bottom-contacts-text-color);
+  color: var(--bottom-contacts-text-color);
 }
 .contacts-bottom a:hover,
 .contacts-bottom a:focus {
@@ -196,7 +189,7 @@ a {
 
 /* Набор контента */
 .content h2 {
-	color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 .content p {
   color: var(--secondary-text-color);
@@ -204,24 +197,24 @@ a {
 
 /* Селектор контента */
 .content-selector button {
-	color: var(--primary-text-color);
-	background-color: var(--main-light-gray-color);
+  color: var(--primary-text-color);
+  background-color: var(--main-light-gray-color);
 }
 .content-selector button:hover,
 .content-selector button:focus {
-	color: var(--main-black-color);
-	background-color: var(--accent-color);
+  color: var(--main-light-color);
+  background-color: var(--accent-color);
 }
 
 /* Портфолио */
 .portfolio h1 {
-	color: var(--main-black-color);
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
+  color: var(--main-black-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .content.list h2 {
   font-weight: 700;
